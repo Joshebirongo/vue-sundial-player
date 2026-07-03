@@ -40,7 +40,7 @@ const artists = computed(() => {
                 <p class="artist-count">{{ artist.tracks.length }} tracks</p>
                 <ul class="artist-tracks">
                     <li
-                        v-for="t in artist.track"
+                        v-for="t in artist.tracks"
                         :key="t.id"
                         @click="play(t.index)"
                     >
